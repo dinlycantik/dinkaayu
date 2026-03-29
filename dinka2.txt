@@ -1,0 +1,13 @@
+ukk nas 30march2026
+- idupin xampp apache&mysql
+- buka file bkin folder ukk di D trs ketik cmd di search bar abistu ketik composer create-project itsazni/ukk
+- ketik cd ukk trs code . 
+- lanjut bikin database di phpmyadmin
+- trs ganti database di folder env DB_DATABASE
+- tre ketik php artisan migrate:fresh —seed
+- abistu ketik php artisan serve
+- abistu buka file trs cmd trs ketik npm install
+- trs ketik npm run dev trs pencet link nya
+- yg diganti kodingnya app/http/admin/student controlers, sm yg routes web
+- abistu ke link trs jadi
+- bkin css nya tweakcn.com
