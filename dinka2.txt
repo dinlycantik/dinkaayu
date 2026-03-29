@@ -8,6 +8,20 @@ ukk nas 30march2026
 - abistu ketik php artisan serve
 - abistu buka file trs cmd trs ketik npm install
 - trs ketik npm run dev trs pencet link nya
-- yg diganti kodingnya app/http/admin/student controlers, sm yg routes web
+- yg diganti kodingnya app/http/admin/student controlers
+ return Inertia::render('admin/students/edit', [
+            'student' => $student
+        ]);
+        $student->update($validated);
+
+        return redirect()->route('admin.students.index')->with('message', 'Siswa berhasil ditambahkan.');
+    }
+- sm yg routes/web
+Route::resource('admin/categories', AdminCategoryController::class)->only(['index', 's', 'update','destroy'])->names([
+        'index' => 'admin.categories.index',
+        'store' => 'admin.categories.store',
+        'update' => 'admin.categories.update',
+        'destroy' => 'admin.categories.destroy',
+    ]);
 - abistu ke link trs jadi
 - bkin css nya tweakcn.com
